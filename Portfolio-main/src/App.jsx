@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+
+const formalPicture = '/assets/img/formal picture.jpg';
+import kaffeineWebsite from './assets/Kaffeine-Website.png';
+import globalVisaWebsite from './assets/GlobalVisa-Website.png';
+import valorantWebsite from './assets/Valorant-Website.png';
+import introCybersecurityCert from './assets/Introduction to Cybersecurity.png';
+import gitGitHubSeminarCert from './assets/Git and GitHub Seminar.jpg';
+import cloudAwsCert from './assets/Basics of Cloud Computing with AWS.jpg';
+import azureAiCert from './assets/Azure AI Fundamentals.jpg';
+import securityIdentityCert from './assets/Security, Compliance, and Identity Fundamentals.jpg';
+
 const Motion = motion;
 
 const Background = () => {
@@ -54,9 +66,6 @@ const Section = ({ children, id, className, delay = 0 }) => {
     </motion.section>
   );
 };
-
-import { TypeAnimation } from 'react-type-animation';
-
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -232,7 +241,7 @@ const App = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                   className="absolute inset-2 bg-slate-900 rounded-3xl overflow-hidden border border-slate-700/50 z-10 shadow-2xl flex items-end justify-center"
                 >
-                  <img src="/assets/img/formal picture.jpg" alt="Keithlene Galingana" className="w-full h-full zoom-out object-cover object-top-10 opacity-90 hover:opacity-100 transition-opacity" />
+                  <img src={formalPicture} alt="Keithlene Galingana" className="w-full h-full zoom-out object-cover object-top-10 opacity-90 hover:opacity-100 transition-opacity" />
                 </motion.div>
                 {/* Decorative elements */}
                 <motion.div
@@ -309,9 +318,9 @@ const App = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: 'Kaffeine Website', label: 'UI/UX Design / Web', desc: 'A warm, modern coffee shop website focused on clear navigation, expressive visual design, and a smooth browsing experience.', img: '/assets/img/Kaffeine-Website.png', link: 'https://kaffeinewebsite-git-main-rarehyacints-projects.vercel.app/' },
-                { title: 'Global Visa Website', label: 'UI/UX Design / Web', desc: 'A polished visa assistance website designed to make travel information, services, and next steps easy to discover.', img: '/assets/img/GlobalVisa-Website.png', link: 'https://visa-assistance-website-z4gs.vercel.app/' },
-                { title: 'Valorant Theme Website', label: 'HTML / CSS / JS', desc: 'A visually striking static website inspired by Valorant, showcasing complex UI styling, responsive layouts, and animations.', img: '/assets/img/Valorant-Website.png', link: 'https://valorant-theme-website.vercel.app/' },
+                { title: 'Kaffeine Website', label: 'UI/UX Design / Web', desc: 'A warm, modern coffee shop website focused on clear navigation, expressive visual design, and a smooth browsing experience.', img: kaffeineWebsite, link: 'https://kaffeinewebsite-git-main-rarehyacints-projects.vercel.app/' },
+                { title: 'Global Visa Website', label: 'UI/UX Design / Web', desc: 'A polished visa assistance website designed to make travel information, services, and next steps easy to discover.', img: globalVisaWebsite, link: 'https://visa-assistance-website-z4gs.vercel.app/' },
+                { title: 'Valorant Theme Website', label: 'HTML / CSS / JS', desc: 'A visually striking static website inspired by Valorant, showcasing complex UI styling, responsive layouts, and animations.', img: valorantWebsite, link: 'https://valorant-theme-website.vercel.app/' },
               ].map((project, i) => (
                 <motion.div
                   key={i}
@@ -449,11 +458,11 @@ const App = () => {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: 'Introduction to Cybersecurity', date: 'March 2025', image: '/assets/img/Introduction%20to%20Cybersecurity.png' },
-                  { title: 'Git and GitHub Seminar', date: 'February 2024', image: '/assets/img/Git%20and%20GitHub%20Seminar.jpg' },
-                  { title: 'Basics of Cloud Computing with AWS', date: 'February 2024', image: '/assets/img/Basics%20of%20Cloud%20Computing%20with%20AWS.jpg' },
-                  { title: 'Azure AI Fundamentals', date: 'July 2026', image: '/assets/img/Azure%20AI%20Fundamentals.jpg' },
-                  { title: 'Security, Compliance, and Identity Fundamentals', date: 'July 2026', image: '/assets/img/Security,%20Compliance,%20and%20Identity%20Fundamentals.jpg' }
+                  { title: 'Introduction to Cybersecurity', date: 'March 2025', image: introCybersecurityCert },
+                  { title: 'Git and GitHub Seminar', date: 'February 2024', image: gitGitHubSeminarCert },
+                  { title: 'Basics of Cloud Computing with AWS', date: 'February 2024', image: cloudAwsCert },
+                  { title: 'Azure AI Fundamentals', date: 'July 2026', image: azureAiCert },
+                  { title: 'Security, Compliance, and Identity Fundamentals', date: 'July 2026', image: securityIdentityCert }
                 ].map((certificate) => (
                   <motion.button
                     type="button"
