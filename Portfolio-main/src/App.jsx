@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
-const formalPicture = '/assets/img/formal picture.jpg';
-import kaffeineWebsite from './assets/Kaffeine-Website.png';
-import globalVisaWebsite from './assets/GlobalVisa-Website.png';
-import valorantWebsite from './assets/Valorant-Website.png';
-import introCybersecurityCert from './assets/Introduction to Cybersecurity.png';
-import gitGitHubSeminarCert from './assets/Git and GitHub Seminar.jpg';
-import cloudAwsCert from './assets/Basics of Cloud Computing with AWS.jpg';
-import azureAiCert from './assets/Azure AI Fundamentals.jpg';
-import securityIdentityCert from './assets/Security, Compliance, and Identity Fundamentals.jpg';
+const getPublicAsset = (fileName) => `/assets/img/${encodeURIComponent(fileName)}`;
+
+const formalPicture = getPublicAsset('formal picture.jpg');
+const kaffeineWebsite = getPublicAsset('Kaffeine-Website.png');
+const globalVisaWebsite = getPublicAsset('GlobalVisa-Website.png');
+const valorantWebsite = getPublicAsset('Valorant-Website.png');
+const introCybersecurityCert = getPublicAsset('Introduction to Cybersecurity.png');
+const gitGitHubSeminarCert = getPublicAsset('Git and GitHub Seminar.jpg');
+const cloudAwsCert = getPublicAsset('Basics of Cloud Computing with AWS.jpg');
+const azureAiCert = getPublicAsset('Azure AI Fundamentals.jpg');
+const securityIdentityCert = getPublicAsset('Security, Compliance, and Identity Fundamentals.jpg');
 
 const Motion = motion;
 
