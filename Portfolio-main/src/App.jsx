@@ -309,9 +309,9 @@ const App = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: 'Kaffeine Website', label: 'UI/UX Design / Web', desc: 'A warm, modern coffee shop website focused on clear navigation, expressive visual design, and a smooth browsing experience.', img: '/assets/img/kaffeine-website.svg', link: 'https://vercel.com/rarehyacints-projects/kaffeinewebsite/Aw1Zh8SYBBYK1Ytrw7DwQQwrgCGQ' },
-                { title: 'Global Visa Website', label: 'UI/UX Design / Web', desc: 'A polished visa assistance website designed to make travel information, services, and next steps easy to discover.', img: '/assets/img/global-visa-website.svg', link: 'https://visa-assistance-website-z4gs.vercel.app/' },
-                { title: 'Valorant Theme Website', label: 'HTML / CSS / JS', desc: 'A visually striking static website inspired by Valorant, showcasing complex UI styling, responsive layouts, and animations.', img: '/assets/img/valorant-theme.png', link: null }
+                { title: 'Kaffeine Website', label: 'UI/UX Design / Web', desc: 'A warm, modern coffee shop website focused on clear navigation, expressive visual design, and a smooth browsing experience.', img: '/assets/Kaffeine-Website.svg', link: 'https://kaffeinewebsite-git-main-rarehyacints-projects.vercel.app/' },
+                { title: 'Global Visa Website', label: 'UI/UX Design / Web', desc: 'A polished visa assistance website designed to make travel information, services, and next steps easy to discover.', img: '/assets/Global-Visa-Website.svg', link: 'https://visa-assistance-website-z4gs.vercel.app/' },
+                { title: 'Valorant Theme Website', label: 'HTML / CSS / JS', desc: 'A visually striking static website inspired by Valorant, showcasing complex UI styling, responsive layouts, and animations.', img: '/assets/Valorant-Theme-Website.svg', link: 'https://valorant-theme-website.vercel.app/' }, 
               ].map((project, i) => (
                 <motion.div
                   key={i}
@@ -449,11 +449,11 @@ const App = () => {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: 'Introduction to Cybersecurity', date: 'March 2025', image: '/assets/img/certificates/introduction-to-cybersecurity.jpg' },
-                  { title: 'Git and GitHub Seminar', date: 'February 2024', image: '/assets/img/certificates/git-and-github.jpg' },
-                  { title: 'Basics of Cloud Computing with AWS', date: 'February 2024', image: '/assets/img/certificates/aws-cloud-computing.jpg' },
-                  { title: 'Azure AI Fundamentals', date: 'July 2026', image: '/assets/img/certificates/azure-ai-fundamentals.jpg' },
-                  { title: 'Security, Compliance, and Identity Fundamentals', date: 'July 2026', image: '/assets/img/certificates/security-compliance-identity.jpg' }
+                  { title: 'Introduction to Cybersecurity', date: 'March 2025', image: '/assets/Introduction-to-Cybersecurity.svg' },
+                  { title: 'Git and GitHub Seminar', date: 'February 2024', image: '/assets/Git-and-GitHub-Seminar.svg' },
+                  { title: 'Basics of Cloud Computing with AWS', date: 'February 2024', image: '/assets/Basics-of-Cloud-Computing-with-AWS.svg' },
+                  { title: 'Azure AI Fundamentals', date: 'July 2026', image: '/assets/Azure-AI-Fundamentals.svg' },
+                  { title: 'Security, Compliance, and Identity Fundamentals', date: 'July 2026', image: '/assets/Security-Compliance-and-Identity-Fundamentals.svg' }
                 ].map((certificate) => (
                   <motion.button
                     type="button"
