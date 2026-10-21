@@ -200,7 +200,7 @@ const App = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/assets/pdf/Galingana_Keithlene_CV I.pdf" download target="_blank" rel="noreferrer"
+                  href="/assets/pdf/Galingana_Keithlene_CV%20I.pdf" download="Galingana_Keithlene_CV I.pdf"
                   className="group px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 text-white font-medium shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:shadow-[0_0_25px_rgba(6,182,212,0.6)] transition-all duration-300 flex items-center gap-2"
                 >
                   <i className="ri-download-2-line text-lg group-hover:-translate-y-1 transition-transform"></i> Download CV
